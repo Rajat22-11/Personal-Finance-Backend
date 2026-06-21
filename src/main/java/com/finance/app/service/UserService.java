@@ -21,6 +21,7 @@ public class UserService {
                 .passwordHash(requestDto.getPasswordHash())
                 .firstName(requestDto.getFirstName())
                 .lastName(requestDto.getLastName())
+                .isActive(true)
                 .build();
 
         User savedUser = userRepository.save(user);
